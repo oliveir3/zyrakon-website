@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Demo | Zyrakon</title>
+    <style>
+        :root {
+            --color-primary: #0A1628;
+            --color-accent: #FF6B2B;
+            --color-white: #FFFFFF;
+            --color-gray: #94A3B8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: var(--color-primary);
+            color: var(--color-white);
+            line-height: 1.6;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        [data-animate].visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section { padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+        .box {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--color-accent); }
+        .spacer { height: 60vh; display: flex; align-items: center; justify-content: center; color: var(--color-gray); }
+    </style>
+</head>
+<body>
+    <div class="section" style="text-align:center;padding-top:6rem;">
+        <h1>Animation Demo</h1>
+        <p style="color:var(--color-gray)">Scroll down to see animations trigger</p>
+    </div>
+    
+    <div class="spacer">⬇ Scroll down ⬇</div>
+    
+    <div class="section">
+        <div class="box" data-animate>
+            <h2>Fade In Up</h2>
+            <p>This box animates when it enters the viewport</p>
+        </div>
+    </div>
+    
+    <div class="spacer">⬇ Keep scrolling ⬇</div>
+    
+    <div class="section" style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <div class="box" data-animate style="flex:1;min-width:200px;">
+            <h2>Card 1</h2>
+            <p>Staggered entrance</p>
+        </div>
+        <div class="box" data-animate style="flex:1;min-width:200px;">
+            <h2>Card 2</h2>
+            <p>0.1s delay</p>
+        </div>
+        <div class="box" data-animate style="flex:1;min-width:200px;">
+            <h2>Card 3</h2>
+            <p>0.2s delay</p>
+        </div>
+    </div>
+    
+    <div class="spacer">⬇ Almost there ⬇</div>
+    
+    <div class="section" style="text-align:center;">
+        <div class="box" data-animate style="animation: pulse 2s infinite; border-color: var(--color-accent);">
+            <h2>✨ Animated CTA</h2>
+            <p>This pulses to draw attention</p>
+        </div>
+    </div>
+    
+    <div class="spacer" style="height:30vh;">End of demo</div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+        
+        document.querySelectorAll('[data-animate]').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
