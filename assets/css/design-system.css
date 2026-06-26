@@ -1,0 +1,73 @@
+﻿
+/* ============================================================================
+   ZYRAKON BRAND EXTENSIONS
+   Phoenix Orange Brand Colors
+   ============================================================================ */
+
+:root {
+  /* Phoenix Orange Brand */
+  --color-phoenix: #FF6B2B;
+  --color-phoenix-light: #FF8C42;
+  --color-phoenix-glow: rgba(255, 107, 43, 0.15);
+  --color-phoenix-glow-strong: rgba(255, 107, 43, 0.25);
+  
+  /* Update accent to use phoenix orange */
+  --color-accent: #FF6B2B;
+  --color-accent-hover: #FF8C42;
+  --color-accent-glow: rgba(255, 107, 43, 0.15);
+  
+  /* Gradients with phoenix */
+  --gradient-phoenix: linear-gradient(135deg, #FF6B2B 0%, #FF8C42 50%, #FFB347 100%);
+  --gradient-accent: linear-gradient(135deg, #FF6B2B 0%, #FF8C42 100%);
+}
+
+/* Logo image in nav */
+.nav-logo img {
+  display: block;
+  filter: brightness(1.1);
+}
+
+/* Phoenix accent elements */
+.phoenix-accent {
+  color: var(--color-phoenix);
+}
+
+.phoenix-bg {
+  background: var(--gradient-phoenix);
+}
+
+/* Hero background with phoenix glow */
+.hero::before {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 43, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 107, 43, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(255, 107, 43, 0.06) 0%, transparent 50%);
+}
+
+/* Card hover with phoenix border */
+.card:hover {
+  border-color: var(--color-phoenix);
+}
+
+/* Button primary with phoenix gradient */
+.btn-primary {
+  background: var(--gradient-phoenix);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 25px var(--color-phoenix-glow-strong);
+}
+
+/* Nav logo text fallback */
+.nav-logo span {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+}
+
+.nav-logo span span {
+  color: var(--color-phoenix);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+}

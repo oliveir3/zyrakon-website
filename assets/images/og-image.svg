@@ -1,0 +1,33 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#162D50"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="200" cy="400" r="300" fill="rgba(0,180,216,0.03)"/>
+  <circle cx="1000" cy="200" r="250" fill="rgba(0,180,216,0.04)"/>
+  
+  <!-- Phoenix Icon -->
+  <g transform="translate(180,315)">
+    <path d="M0,-40 C-14,-32 -20,-16 -16,0 C-12,16 -6,24 0,32 C6,24 12,16 16,0 C20,-16 14,-32 0,-40Z" 
+          fill="url(#ogGrad)" stroke="#FF6B2B" stroke-width="2"/>
+    <path d="M-10,-18 C-24,-28 -38,-24 -42,-14 C-38,-10 -28,-6 -16,-10Z" 
+          fill="#FF6B2B" opacity="0.6"/>
+    <path d="M10,-18 C24,-28 38,-24 42,-14 C38,-10 28,-6 16,-10Z" 
+          fill="#FF6B2B" opacity="0.6"/>
+    <circle cx="0" cy="-38" r="8" fill="#FF6B2B"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="360" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="800" 
+        fill="#FFFFFF" letter-spacing="4">ZYRA<span fill="#FF6B2B">KON</span></text>
+  <text x="365" y="330" font-family="Arial, sans-serif" font-size="24" font-weight="400" 
+        fill="#94A3B8" letter-spacing="6">THE FOUNDATION OF INTELLIGENT TECHNOLOGY</text>
+  
+  <!-- Bottom line -->
+  <line x1="360" y1="380" x2="900" y2="380" stroke="#FF6B2B" stroke-width="1" opacity="0.5"/>
+</svg>
