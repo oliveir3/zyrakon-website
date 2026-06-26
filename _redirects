@@ -1,0 +1,19 @@
+﻿# Zyrakon - Cloudflare Redirects
+# URL forwarding rules
+
+# Force www to apex
+https://www.zyrakon.com/*    https://zyrakon.com/:splat    301
+
+# Trailing slash normalization
+/pages/about/    /pages/about    301
+/pages/products/ /pages/products 301
+
+# Legacy redirects (future-proofing)
+/old-site/*      /               301
+/blog            /pages/resources  301
+/docs            /pages/developers 301
+/api             /pages/developers 301
+/security        /pages/trust-center 301
+/privacy         /pages/legal     301
+/terms           /pages/legal     301
+/career          /pages/careers   301

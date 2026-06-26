@@ -837,3 +837,87 @@
     transform: none;
   }
 }
+
+/* ============================================================================
+   ZYRAKON PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Critical CSS (above-the-fold optimization)
+   These styles are inlined in the <head> for instant rendering
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Font loading optimization */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+/* Prevent layout shift from images */
+img:not([width]):not([height]) {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Smooth scrolling (if not reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Resource Hints
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Preconnect to external origins */
+/* Add to <head>:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+*/
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Content Visibility (render performance)
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Tell browser to skip rendering off-screen sections */
+.section {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+/* Don't skip hero - it's above the fold */
+.hero {
+  content-visibility: visible;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Image Optimization Hints
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lazy loading for below-fold images */
+img[loading="lazy"] {
+  min-height: 1px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Will-Change hints for smooth animations
+   ────────────────────────────────────────────────────────────────────────── */
+
+.card {
+  will-change: transform;
+}
+
+.nav-links {
+  will-change: right;
+}
+
+.hero-content {
+  will-change: transform, opacity;
+}

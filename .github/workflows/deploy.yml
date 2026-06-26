@@ -1,0 +1,57 @@
+﻿name: Build and Deploy Zyrakon Website
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Create build directory
+        run: |
+          mkdir -p dist
+          cp -r index.html dist/
+          cp -r pages dist/
+          cp -r assets dist/
+          cp -r components dist/
+          cp -r .well-known dist/ 2>/dev/null || true
+          cp robots.txt dist/ 2>/dev/null || true
+          cp sitemap.xml dist/ 2>/dev/null || true
+          cp llms.txt dist/ 2>/dev/null || true
+          cp llms-full.txt dist/ 2>/dev/null || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

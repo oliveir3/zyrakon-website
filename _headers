@@ -1,0 +1,64 @@
+﻿# Zyrakon - Cloudflare Headers Configuration
+# Security, Performance & Caching Rules
+
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
+  
+  # CORS (restrictive by default)
+  Access-Control-Allow-Origin: https://zyrakon.com
+  
+  # Caching
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+# HTML pages - shorter cache
+/*.html
+  Cache-Control: public, max-age=1800, s-maxage=7200
+
+# Static assets - longer cache  
+/assets/*
+  Cache-Control: public, max-age=604800, s-maxage=2592000
+  X-Content-Type-Options: nosniff
+
+# CSS files
+/assets/css/*
+  Cache-Control: public, max-age=604800, immutable
+
+# JavaScript files  
+/assets/js/*
+  Cache-Control: public, max-age=604800, immutable
+
+# Images
+/assets/images/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# Fonts
+/assets/fonts/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# Documents
+/assets/documents/*
+  Cache-Control: public, max-age=604800
+
+# Security files
+/.well-known/*
+  Cache-Control: public, max-age=86400
+
+# AI discovery files - allow crawling
+/llms.txt
+  Cache-Control: public, max-age=86400
+  
+/llms-full.txt
+  Cache-Control: public, max-age=604800
+
+# Sitemap
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+# Robots
+/robots.txt
+  Cache-Control: public, max-age=86400

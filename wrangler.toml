@@ -1,0 +1,19 @@
+﻿# Zyrakon - Cloudflare Wrangler Configuration
+# Cloudflare Pages deployment
+
+name = "zyrakon-website"
+compatibility_date = "2026-06-26"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./dist"
+
+# Routes (for Cloudflare Workers if needed later)
+# routes = [
+#   { pattern = "zyrakon.com", custom_domain = true },
+#   { pattern = "www.zyrakon.com", custom_domain = true }
+# ]
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.preview]
+vars = { ENVIRONMENT = "preview" }
