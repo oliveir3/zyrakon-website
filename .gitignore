@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+vendor/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# OS
+Desktop.ini
+.BIN/
+
+# Secrets
+secrets/
+*.pem
+*.key
+*.cert
+
+# Large assets (track separately)
+assets/images/originals/
