@@ -644,3 +644,171 @@ footer a:hover {
   }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================================================
+   ZYRAKON HOMEPAGE - Single Viewport Layout
+   ============================================================================ */
+
+/* ── Hero Home ── */
+.hero-home {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  background: var(--color-off-white);
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - var(--nav-height));
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+/* ── Left: Text ── */
+.hero-home-text {
+  padding: var(--space-2xl) 0;
+}
+
+.hero-home-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.3px;
+}
+
+.hero-home-title span {
+  color: var(--color-deep-navy);
+}
+
+.hero-home-subtitle {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: var(--color-slate-grey);
+  line-height: 1.65;
+  margin-bottom: var(--space-xl);
+  max-width: 540px;
+}
+
+.hero-home-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+/* ── Status Line ── */
+.hero-home-status {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--color-slate-grey);
+}
+
+.hero-home-status span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* ── Right: Image ── */
+.hero-home-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-home-image img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Minimal Footer ── */
+.footer-minimal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(245, 243, 238, 0.95);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  z-index: 100;
+}
+
+.footer-minimal p,
+.footer-minimal a {
+  font-size: var(--text-xs);
+  margin: 0;
+}
+
+.footer-minimal a {
+  color: var(--color-slate-grey);
+}
+.footer-minimal a:hover {
+  color: var(--color-charcoal);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .hero-home-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-lg);
+  }
+  
+  .hero-home-image {
+    display: none;
+  }
+  
+  .hero-home-text {
+    padding: var(--space-xl) 0;
+  }
+  
+  .hero-home-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-home-actions {
+    flex-direction: column;
+  }
+  
+  .hero-home-status {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .footer-minimal {
+    position: relative;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-home-grid {
+    gap: var(--space-xl);
+  }
+  
+  .hero-home-image img {
+    max-width: 380px;
+  }
+}
+
+/* Push footer down when content is short */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
