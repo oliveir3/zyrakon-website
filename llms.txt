@@ -1,0 +1,50 @@
+﻿# Zyrakon Technologies
+> The Foundation of Intelligent Technology. Building enterprise platforms for digital signatures, banking, airport operations, and AI-powered intelligence.
+
+## Company
+- About Zyrakon: https://zyrakon.com/pages/about/
+- Our Story: https://zyrakon.com/pages/our-story/
+- Trust Center: https://zyrakon.com/pages/trust-center/
+- Research & Innovation: https://zyrakon.com/pages/research/
+- Technology: https://zyrakon.com/pages/technology/
+
+## Products
+- SecureDoc (Digital Signatures): https://zyrakon.com/pages/products/securedoc/
+- NUBRA (Banking Platform): https://zyrakon.com/pages/products/nubra/
+- TALON (Airport Operations): https://zyrakon.com/pages/products/talon/
+- Stock Market Analytics: https://zyrakon.com/pages/products/stock-analytics/
+- Mailbox IQ (Email Intelligence): https://zyrakon.com/pages/products/mailbox-iq/
+
+## Solutions
+- Digital Trust: https://zyrakon.com/pages/solutions/
+- Enterprise AI: https://zyrakon.com/pages/solutions/
+- Document Security: https://zyrakon.com/pages/solutions/
+- Automation: https://zyrakon.com/pages/solutions/
+- Cloud Infrastructure: https://zyrakon.com/pages/solutions/
+- Cybersecurity: https://zyrakon.com/pages/solutions/
+
+## Industries
+- Banking: https://zyrakon.com/pages/industries/
+- Airports: https://zyrakon.com/pages/industries/
+- Government: https://zyrakon.com/pages/industries/
+- Healthcare: https://zyrakon.com/pages/industries/
+- Manufacturing: https://zyrakon.com/pages/industries/
+- Enterprise: https://zyrakon.com/pages/industries/
+
+## Company Info
+- Founded: 2024
+- Headquarters: Singapore
+- Legal Name: Zyrakon Technologies Private Limited
+- Tagline: The Foundation of Intelligent Technology
+- Mission: To research, design, build and deliver world-class technologies that solve meaningful problems.
+- Values: Trust First, Innovation with Purpose, Engineering Excellence, Integrity Always, Long-Term Thinking, Customer Success
+- Contact: https://zyrakon.com/pages/contact/
+- Careers: https://zyrakon.com/pages/careers/
+- Developers: https://zyrakon.com/pages/developers/
+- GitHub: https://github.com/Zyrakon
+
+## Optional
+- Newsroom: https://zyrakon.com/pages/newsroom/
+- Blog: https://zyrakon.com/pages/resources/
+- Legal: https://zyrakon.com/pages/legal/
+- Sustainability: https://zyrakon.com/pages/sustainability/

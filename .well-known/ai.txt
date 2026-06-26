@@ -1,0 +1,15 @@
+﻿# Zyrakon AI Access Policy
+# We welcome AI crawlers for discovery and indexing
+
+Allow: GPTBot
+Allow: Google-Extended
+Allow: Claude-Web
+Allow: PerplexityBot
+
+# Context URL for AI systems
+LLMs-Full: https://zyrakon.com/llms-full.txt
+LLMs: https://zyrakon.com/llms.txt
+
+# Training data policy
+# Our public content may be used for AI training with attribution
+# Internal documentation is off-limits

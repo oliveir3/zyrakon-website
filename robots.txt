@@ -1,0 +1,60 @@
+﻿# Zyrakon Technologies - robots.txt
+# The Foundation of Intelligent Technology
+
+User-agent: *
+Allow: /
+Disallow: /assets/documents/internal/
+Disallow: /pages/responsive-test.html
+Disallow: /pages/animation-demo.html
+Disallow: /test-styled.html
+
+# Crawl delay for polite scraping
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://zyrakon.com/sitemap.xml
+
+# AI Crawlers - Allow for visibility
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 2
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: YouBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Block archive crawlers that just consume bandwidth
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

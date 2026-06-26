@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Home -->
+    <url>
+        <loc>https://zyrakon.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2026-06-26</lastmod>
+    </url>
+    
+    <!-- About -->
+    <url>
+        <loc>https://zyrakon.com/pages/about/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2026-06-26</lastmod>
+    </url>
+    
+    <!-- Our Story -->
+    <url>
+        <loc>https://zyrakon.com/pages/our-story/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2026-06-26</lastmod>
+    </url>
+    
+    <!-- Products -->
+    <url>
+        <loc>https://zyrakon.com/pages/products/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <lastmod>2026-06-26</lastmod>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/securedoc/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/nubra/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/talon/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/stock-analytics/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/mailbox-iq/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Solutions -->
+    <url>
+        <loc>https://zyrakon.com/pages/solutions/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Industries -->
+    <url>
+        <loc>https://zyrakon.com/pages/industries/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Research -->
+    <url>
+        <loc>https://zyrakon.com/pages/research/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Technology -->
+    <url>
+        <loc>https://zyrakon.com/pages/technology/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Trust Center -->
+    <url>
+        <loc>https://zyrakon.com/pages/trust-center/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Resources -->
+    <url>
+        <loc>https://zyrakon.com/pages/resources/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Newsroom -->
+    <url>
+        <loc>https://zyrakon.com/pages/newsroom/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Careers -->
+    <url>
+        <loc>https://zyrakon.com/pages/careers/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Partners -->
+    <url>
+        <loc>https://zyrakon.com/pages/partners/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Investors -->
+    <url>
+        <loc>https://zyrakon.com/pages/investors/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://zyrakon.com/pages/contact/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Legal -->
+    <url>
+        <loc>https://zyrakon.com/pages/legal/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- Sustainability -->
+    <url>
+        <loc>https://zyrakon.com/pages/sustainability/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Developers -->
+    <url>
+        <loc>https://zyrakon.com/pages/developers/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

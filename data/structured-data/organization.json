@@ -1,0 +1,53 @@
+﻿{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zyrakon Technologies",
+  "legalName": "Zyrakon Technologies Private Limited",
+  "alternateName": "Zyrakon",
+  "description": "The Foundation of Intelligent Technology. Building enterprise platforms for digital signatures, banking, airport operations, and AI-powered intelligence.",
+  "url": "https://zyrakon.com",
+  "logo": "https://zyrakon.com/assets/images/logo.png",
+  "image": "https://zyrakon.com/assets/images/og-image.svg",
+  "foundingDate": "2024",
+  "founders": [
+    {
+      "@type": "Person",
+      "jobTitle": "Founder & CEO"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "SG"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "email": "sales@zyrakon.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Support",
+      "email": "support@zyrakon.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Security",
+      "email": "security@zyrakon.com"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/Zyrakon",
+    "https://linkedin.com/company/zyrakon"
+  ],
+  "knowsAbout": [
+    "Digital Signatures",
+    "Enterprise Software",
+    "Banking Infrastructure",
+    "Airport Operations",
+    "Artificial Intelligence",
+    "Cybersecurity",
+    "Blockchain",
+    "Cloud Computing"
+  ]
+}
