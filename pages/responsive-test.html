@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -110,8 +110,8 @@
             if (w <= 480) label = '📱 Mobile S';
             else if (w <= 768) label = '📱 Mobile';
             else if (w <= 1024) label = '📋 Tablet';
-            else if (w <= 1400) label = '🖥️ Desktop';
-            else label = '🖥️ Large Desktop';
+            else if (w <= 1400) label = '🖥 Desktop';
+            else label = '🖥 Large Desktop';
             
             document.getElementById('viewportSize').textContent = label + ' ' + w + '×' + h;
         }
