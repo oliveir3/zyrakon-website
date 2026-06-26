@@ -1066,3 +1066,44 @@ footer a:hover {
     gap: 0.5rem;
   }
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   About Page Layout
+   ────────────────────────────────────────────────────────────────────────── */
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+}
+
+.about-story-text p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.about-story-text .text-lg {
+  font-size: var(--text-xl);
+  color: var(--color-charcoal);
+  font-family: var(--font-display);
+  line-height: var(--leading-relaxed);
+}
+
+.about-story-image img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  
+  .about-story-image {
+    order: -1;
+  }
+}
