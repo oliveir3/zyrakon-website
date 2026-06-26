@@ -45,13 +45,5 @@ start index.html
 
 ## License
 
-&copy; 2024 Zyrakon. All rights reserved.
-```
-
-Save, close Notepad, then:
-
-```cmd
-git add README.md
-git commit -m "Fix README formatting"
-git push
+&copy; 2026 Zyrakon Technologies Private Limited. All rights reserved.
 ```
