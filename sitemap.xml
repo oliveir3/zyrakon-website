@@ -158,4 +158,28 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-</urlset>
+    <url>
+        <loc>https://zyrakon.com/pages/products/chorescan/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/syncweaver/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/pose-in-motion/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/zyrakon-match/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://zyrakon.com/pages/products/destroy-this/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url></urlset>
